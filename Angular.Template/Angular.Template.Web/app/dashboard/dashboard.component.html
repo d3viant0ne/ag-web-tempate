@@ -1,0 +1,68 @@
+﻿<div class="card-container">
+        <md-tab-group>
+            <md-tab label="AgGrid">
+                <div fxLayout="row" fxLayoutAlign="center center">
+                    <md-card>
+                        <md-card-title class="foobar">AgGrid</md-card-title>
+                        <i class="fa fa-pie-chart" aria-hidden="true"></i>
+                        <md-card-content>
+                            <ag-grid-angular #agGrid style="width: 100%; height: 350px;" class="ag-material" [gridOptions]="gridOptions"></ag-grid-angular>
+                        </md-card-content>
+                    </md-card>
+                </div>
+            </md-tab>
+            <md-tab label="Buttons">
+                <md-card>
+                    <md-card-subtitle>Subtitle first</md-card-subtitle>
+                    <md-card-title>Card with title</md-card-title>
+                    <md-card-content>
+                        <p>Slider</p>
+                        <p>
+                            <md-slider min="1" max="10" value="6" step="1"></md-slider>
+                        </p>
+                    </md-card-content>
+                    <md-card-actions>
+                        <button md-raised-button color="primary">Primary</button>
+                        <button md-raised-button color="accent">Accent</button>
+                        <button md-raised-button color="warn">Warn</button>
+                        <button md-mini-fab (click)="openDialog()">
+                            <md-icon class="md-24">add</md-icon>
+                        </button>
+                        <button md-raised-button color="primary" (click)="popSnackbar()">Happy message!</button>
+                    </md-card-actions>
+                </md-card>
+            </md-tab>
+            <md-tab label="Cards">
+                <md-card>
+                    <md-card-title-group>
+                        <md-card-title>Card with title</md-card-title>
+                        <md-card-subtitle>Subtitle</md-card-subtitle>
+                        <img md-card-md-image src="https://material.angularjs.org/latest/img/washedout.png">
+                    </md-card-title-group>
+                </md-card>
+                <md-card>
+                    <md-card-header>
+                        <img md-card-avatar src="https://material.angularjs.org/latest/img/washedout.png">
+                        <md-card-title>Header title</md-card-title>
+                        <md-card-subtitle>Header subtitle</md-card-subtitle>
+                    </md-card-header>
+                    <img md-card-image alt="Main image" src="https://material.angularjs.org/latest/img/washedout.png">
+                    <md-card-content>
+                        <md-card-title>Content Title</md-card-title>
+                        <p>Here is some content</p>
+                    </md-card-content>
+                </md-card>
+
+                <md-card class="blue">
+                    <md-card-title>Easily customizable</md-card-title>
+                    <md-card-actions>
+                        <button md-button>First</button>
+                        <button md-button>Second</button>
+                    </md-card-actions>
+                </md-card>
+            </md-tab>
+        </md-tab-group>
+  
+
+
+</div>

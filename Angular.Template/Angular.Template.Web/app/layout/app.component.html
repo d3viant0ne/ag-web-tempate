@@ -1,0 +1,29 @@
+﻿<div [class.dark-theme]="isDarkTheme">
+    <md-toolbar color="primary">
+        <span>
+            <button md-icon-button (click)="sidenav.toggle()">
+                <md-icon>menu</md-icon>
+            </button>
+            &nbsp;&nbsp;
+            
+            Angular 2
+        </span>
+        <span class="fill-remaining-space"></span>
+        <md-slide-toggle [(ngModel)]="isDarkTheme" fxHide.xs></md-slide-toggle>
+        <button md-icon-button fxHide.xs>
+            <md-icon>exit_to_app</md-icon>
+        </button>
+    </md-toolbar>
+
+    <md-sidenav-container>
+        <md-sidenav #sidenav opened align="start" mode="side">
+            <md-nav-list>
+                <a md-list-item routerLink="/dochazka">
+                    <span>Dashboard</span>
+                </a>
+            </md-nav-list>
+        </md-sidenav>
+
+        <router-outlet></router-outlet>
+    </md-sidenav-container>
+</div>

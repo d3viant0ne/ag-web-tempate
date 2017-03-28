@@ -250,3 +250,8 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+/Angular.Template/Angular.Template.Web/Properties
+/Angular.Template/Angular.Template.Web/Angular.Template.Web.csproj
+/Angular.Template/Angular.Template.Web/Program.cs
+/Angular.Template/Angular.Template.Web/Startup.cs
+/Angular.Template/Angular.Template.sln
