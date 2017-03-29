@@ -100,7 +100,8 @@ module.exports = {
 
         new AotPlugin({
             mainPath: helpers.root('app', 'main.ts'),
-            tsConfigPath: helpers.root('tsconfig.json')
+            tsConfigPath: helpers.root('tsconfig.json'),
+            entryModule: helpers.root('app/app.module#AppModule')
         })
 
     ]
