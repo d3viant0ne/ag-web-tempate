@@ -1,12 +1,11 @@
-﻿import { Component, OnInit, OnDestroy, ViewEncapsulation } from '@angular/core';
+﻿import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
     selector: 'my-app',
     templateUrl: '../app.component',
-    styleUrls: ['../../../styles/styles.scss'],
-    providers: [Title],
-    encapsulation: ViewEncapsulation.None
+    styleUrls: ['../styles/app.component.scss'],
+    providers: [Title]
 })
 export class AppComponent implements OnInit, OnDestroy {
 
